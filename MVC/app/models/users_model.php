@@ -64,22 +64,22 @@ class Users_Model extends Model {
             
     function email($emailData){
         
-        $this->mail->PHPmail->clearAddresses();
-        $this->mail->PHPmail->addAddress($emailData['address'],$emailData['username']);
+        $this->mail->clearAddresses();
+        $this->mail->addAddress($emailData['address'],$emailData['username']);
         
-        $this->mail->PHPmail->Subject = 'Email Confirmation';
-        $this->mail->PHPmail->Body = 'Thank you, '.$emailData['username'].' for registering a account on MyWebsite.com!';
+        $this->mail->Subject = 'Email Confirmation';
+        $this->mail->Body = 'Thank you, '.$emailData['username'].' for registering a account on MyWebsite.com!';
         //$this->mail->AltBody = $emailData['altBody'];
         
         
-        if($this->mail->PHPmail->send()){
+        if($this->mail->send()){
             return true;
         }
         else{
-            return 'error:'.$this->mail->PHPmail->ErrorInfo;
+            return 'error:'.$this->mail->ErrorInfo;
         }
         
-        $this->mail->PHPmail->clearAddresses();
+        $this->mail->clearAddresses();
         
     }
     

@@ -12,22 +12,22 @@ class Model {
     
     function email($emailData){
         
-        $this->mail->PHPmail->clearAddresses();
-        $this->mail->PHPmail->addAddress($emailData['address'],$emailData['addressName']);
+        $this->mail->clearAddresses();
+        $this->mail->addAddress($emailData['address'],$emailData['addressName']);
         
-        $this->mail->PHPmail->Subject = $emailData['subject'];
-        $this->mail->PHPmail->Body = $emailData['body'];
+        $this->mail->Subject = $emailData['subject'];
+        $this->mail->Body = $emailData['body'];
         //$this->mail->AltBody = $emailData['altBody'];
         
         
-        if($this->mail->PHPmail->send()){
+        if($this->mail->send()){
             return true;
         }
         else{
-            return $this->mail->PHPmail->ErrorInfo;
+            return $this->mail->ErrorInfo;
         }
         
-        $this->mail->PHPmail->clearAddresses();
+        $this->mail->clearAddresses();
         
     }
     
