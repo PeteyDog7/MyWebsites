@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>SoundCloud API</title>
+    <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css"/>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="javascripts/global.js"></script>
+	<script type="text/javascript" src="javascripts/clock.js"></script>
+	<script type="text/javascript" src="javascripts/SoundCloudAPI.js"></script>
+	<link rel="stylesheet" type="text/css" href="stylesheets/style.css"/>
+	<script src="//connect.soundcloud.com/sdk.js"></script>
+	<meta http-equiv="refresh" content="0; url=http://localhost/website/local" />
+</head>
+<body>
+	<a href="https://twitter.com/noahtk7" class="twitter-follow-button" data-show-count="false" data-lang="en">Follow @noahtk7</a>
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+	<div id="clockDiv">
+		<h4 id="clockHeader" class="h3Labels">Local Time:</h5>
+		<p id="clock"></p>
+	</div>
+	<h1>Welcome to My "Website"!</h1>
+	<br/>
+	<nav>
+	<div id="globalNavDiv">
+	    <a class="globalNav" href="http://localhost/website/local/index.php">Home Page </a>
+	    <a class="globalNav" href="http://localhost/website/local/jQueryTesting.html">jQuery Testing</a>
+	    <a class="globalNav" href="http://localhost/website/local/SoundCloudAPI.html">SoundCloud API</a>
+        <a class="globalNav" href="http://localhost/website/local/games.html">Games</a>
+	</div>
+	</nav>
+	<br/>
+	<h3 class="h3Labels">SoundCloud API Test</h3>
+	<a href="#" class="connect">Connect with SoundCloud</a>
+    <p id="SCwelcome">Hello, <span id="username"></span></p>
+	<br/>
+	<ul id="playTracks">
+	<li><a href="#" class="playATrack">Play a Suggested Track (WIP)</a></li>
+	<li><a href="#" class="playAFavTrack">Play one of your Favorited Tracks</a></li>
+	</ul>
+	<p id="playWarning">(Make sure you connect with SoundCloud with the link above before you try to play a track!)</p>
+	<div id="player"></div>
+	<div id="player1"></div>
+	<br/>
+	<a id="poweredBySC" href="https://www.soundcloud.com"><img src="/images/powered_by_SoundCloud.png" alt="Powered By SoundCloud"></a>
+</body>
+</html>

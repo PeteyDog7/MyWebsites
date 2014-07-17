@@ -1,0 +1,298 @@
+body {
+	background: #E6E6E6;
+	font: 14px 'trebuchet ms', arial, sans-serif;
+}
+
+#body {
+        width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 0px 0px 20px 3px grey;
+}
+
+/** Structure */
+#header {
+	padding: 20px;
+	background: #12407f;
+	color: #fff;
+	//border-top-left-radius: 10px;
+	//border-top-right-radius: 10px;
+	border-bottom: 4px solid #436fac;
+}
+
+#content {
+	background: #c9c9c9;
+	padding: 20px;
+        min-height: 250px;
+}
+
+#floatContent {
+        background: white;
+        padding: 20px;
+        border-radius: 5px;
+        width: 200px;
+        display: inline-block;
+        margin-left: 5px;
+        box-shadow: 0px 0px 20px 3px grey;
+        float: right;
+}
+
+#mainContent {
+        background: white;
+        padding: 20px;
+        border-radius: 5px;
+        width: 650px;
+        display: inline-block;
+        margin-right: 5px;
+        //height: 500px;
+        box-shadow: 0px 0px 20px 3px grey;
+}
+
+#footer {
+	background: #12407f;
+	color: #fff;
+	padding: 10px;
+	border-top: 4px solid #436fac;
+	//border-bottom-left-radius: 10px;
+	//border-bottom-right-radius: 10px;
+}
+
+/* Links */
+#header a {
+	color: #fff;
+	background: #436fac;
+	padding: 4px 15px;
+	text-decoration: none;
+	font-size: 15px;
+	font-weight: bolder;
+}
+
+#header a:hover {
+	background: #4d8add
+}
+
+#currentUsers td #unavailable {
+        background-color: lightgrey;
+}
+
+/** Forms */
+form {
+	font: 100% verdana,arial,sans-serif;
+}
+
+form label { 
+	display: block;
+	float: left; 
+	width: 150px; 
+	padding: 0; 
+	margin: 9px 0 0;
+	text-align: right; 
+}
+
+form input, form select {
+	width: auto;
+	margin: 5px 0 0 10px;
+	border: 1px solid gray;
+	padding: 4px;
+}
+
+form input[type=submit] {
+        margin-bottom: 5px;
+}
+
+form input[type=submit]:hover {
+	cursor: pointer;
+	background: silver;
+}
+
+form br {
+        clear: left;
+}
+
+#resetPassCheck {
+        margin-top: 10px;
+        margin-bottom: 5px
+}
+
+#resetCancel {
+        display: inline;
+}
+
+#editCancel input[type=submit] {
+        position: relative;
+        top: -36px;
+        left: 250px;
+}
+
+/* Text */
+
+#loginSuccess {
+        width: 180px;
+        padding: 5px;
+        text-align: center;
+        position: relative;
+        left: 105px;
+        color: green;
+        background-color: #dbffde;
+        border: 1px solid green;
+        border-radius: 5px;
+}
+
+#loginError {
+        width: 200px;
+        padding: 5px;
+        text-align: center;
+        position: relative;
+        left: 95px;
+        color: red;
+        background-color: #ffdbdb;
+        border: 1px solid red;
+        border-radius: 5px;
+
+}
+
+#dashSuccess {
+        color: green;
+        width: 180px;
+        text-align: center;
+        padding: 5px;
+        background-color: #dbffde;
+        border: 1px solid green;
+        border-radius: 5px;
+        position: relative;
+        left: 20px;
+}
+
+#dashFail {
+        color: red;
+        width: 175px;
+        text-align: center;
+        padding: 5px;
+        background-color: #ffdbdb;
+        border: 1px solid red;
+        border-radius: 5px;
+        position: relative;
+        left: 25px;
+}
+
+#usersSuccess {
+        color: green;
+        width: 300px;
+        text-align: center;
+        padding: 5px;
+        background-color: #dbffde;
+        border: 1px solid green;
+        border-radius: 5px;
+        position: relative;
+        left: 60px;
+        margin-bottom: 30px;
+}
+
+#loginHeader, #createHeader {
+        display: inline-block;
+        margin: 0px 5px 25px 5px;
+}
+
+#createHeader a {
+        text-decoration: underline;
+        color: black;
+}
+
+#editIDLabel {
+        font-weight: 900;
+        text-align: left;
+        margin-left: 10px;
+        font-size: 16px;
+}
+
+#ownerEditFail {
+        color: red;
+        width: 360px;
+        text-align: center;
+        padding: 5px;
+        background-color: #ffdbdb;
+        border: 1px solid red;
+        border-radius: 5px;
+        position: relative;
+        left: 10px;
+}
+
+/*footer*/
+
+#footer nav {
+        padding: 3px;
+        margin-left: 10px;
+        margin: 0px 8px;
+}
+
+#footer a {
+	color: #fff;
+	padding: 3px;
+	text-decoration: none;
+	font-size: 13px;
+}
+
+#footer nav p {
+	font-weight: bolder;
+        font-size: 14px;
+        display: inline-block;
+}
+
+#copyright {
+        color: lightgray;
+        font-size: 12px;
+        margin-left: 10px;
+        margin-top: 0px;
+}
+
+/* Tables */
+
+#currentUsers {
+        font-family: arial;
+}
+
+#currentUsers td {
+        padding: 10px;
+        text-align: center;
+}
+
+#currentUsers td a {
+        padding: 5px;
+        border-radius: 3px;
+        text-decoration: none;
+        color: white;
+        background: #436fac;
+}
+
+#currentUsers td a:hover {
+	background: #4d8add
+}
+
+#currentUsers tr:first-child {
+        font-weight: bold;
+}
+
+#currentUsers tr td {
+        border-bottom: 1px solid black;
+        border-right: 1px solid black;
+}
+
+#currentUsers tr:last-child td {
+    border-bottom: none;
+}
+
+/* Misc. */
+
+hr {
+        margin: 20px 2px;
+}
+
+#twitter-widget-0 {
+        display: inline-block;
+}
+
+.fb-like {
+        display: inline-block;
+        height: 100px;
+        width: 200px;
+}

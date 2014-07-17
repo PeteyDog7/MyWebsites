@@ -1,0 +1,4 @@
+AuthName "Local Access Version - Admin Only"
+AuthType Basic
+AuthUserFile "C:\xampp\security\admin.users"
+require valid-user

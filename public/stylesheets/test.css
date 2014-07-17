@@ -1,0 +1,105 @@
+html{
+    background-color: #cccccc;
+}
+#headerWarpper{
+    margin-right:auto;
+    margin-left:auto;
+    width: 550px;
+}
+.contentWrapper {
+    background-color: white;
+    border-radius:3px;
+    padding:25px;
+    width: auto;
+    position: absolute;
+    z-index: -1;
+}
+#floatWrapper {
+    border-color: 1px black;
+    float: right;
+    z-index: 1;
+}
+
+#first {
+color:red;
+font-family:cursive;
+}
+#second {
+color:blue;
+font-family:verdana;
+}
+#blue {
+background-color:blue;
+}
+#green {
+background-color:green;
+}
+.coloredDivs {
+height:100px;
+width:100px;
+margin:10px;
+}
+.h3Labels {
+text-decoration: underline;
+}
+#playWarning {
+font-size:10px;
+}
+.globalNav {
+    text-decoration:none;
+    background-color:#5c5c5c;
+    color:white;
+	font-weight:bold;
+	border-radius:3px;
+	padding:3px;
+	margin:5px;
+	font-family:verdana;
+}
+.twitter-follow-button {
+margin: 3px;
+}
+#globalNavDiv {
+background-color:#989898;
+border-radius:3px;
+padding:7px;
+width:530px;
+}
+.highlight {
+    border:3px solid black;
+    
+}
+#poweredBySC {
+    cursor:pointer;
+}
+#accordionMenu {
+    display:inline-block;
+    padding:10px;
+}
+#progressBar {
+    margin-top:10px;
+    margin-bottom:10px;
+    width:400px;
+    padding:5px;
+    border:2px solid black;
+    border-radius:3px;
+}
+#marioDiv {
+    border:2px solid black;
+    width:500px;
+    height:300px;
+    position: relative;
+}
+#mario {
+    position:absolute;
+    height:40px;
+    width:40px;
+}
+#clock {
+    display: inline-block;
+}
+#clockHeader {
+    display: inline-block;
+}
+#clockDiv {
+
+}

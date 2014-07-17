@@ -1,0 +1,4 @@
+AuthName "Main Website - Trusted Users Only"
+AuthType Basic
+AuthUserFile "C:\xampp\security\guest.users"
+require valid-user
