@@ -1,25 +1,25 @@
 <?php
 
-class Mail {
+class Mail extends PHPMailer {
 
     function __construct() {
         
-        $this->PHPmail = new PHPMailer();
+        parent::__construct();
         
-        $this->PHPmail->SMTPAuth = true;
-        $this->PHPmail->SMTPDebug = 2;
+        $this->SMTPAuth = true;
+        $this->SMTPDebug = 2;
         
-        $this->PHPmail->Host = 'smtp.gmail.com';
-        $this->PHPmail->Username = 'bontkurrack@gmail.com';
-        $this->PHPmail->Password= 'nobo1967';
+        $this->Host = 'smtp.gmail.com';
+        $this->Username = 'bontkurrack@gmail.com';
+        $this->Password= '';
         
-        $this->PHPmail->SMTPSecure = 'ssl';
-        $this->PHPmail->Port = 465;
+        $this->SMTPSecure = 'ssl';
+        $this->Port = 465;
         
-        $this->PHPmail->From = 'bontkurrack@gmail.com';
-        $this->PHPmail->FromName = 'Noah\'s Website';
+        $this->From = 'bontkurrack@gmail.com';
+        $this->FromName = 'Noah\'s Website';
         
-        $this->PHPmail->addReplyTo('bontkurrack@gmail.com','Reply Address');
+        $this->addReplyTo('bontkurrack@gmail.com','Reply Address');
         
         /*$this->mail->clearAdresses();
         $this->mail->addReplyTo('bontkurrack@gmail.com','Reply Address');
